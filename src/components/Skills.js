@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TrackVisibility from 'react-on-screen';
 
 const skillsData = [
@@ -37,6 +37,17 @@ const skillsData = [
 ];
 
 export const Skills = () => {
+  const [isMdScreen, setIsMdScreen] = useState(window.innerWidth >= 768); // Initial check for `md` screen or larger
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMdScreen(window.innerWidth >= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <section className="skill" id="skills">
       <TrackVisibility>
@@ -45,7 +56,7 @@ export const Skills = () => {
             <div className="flex flex-wrap justify-center w-[90%] max-w-[1200px] rounded-xl bg-gray-900 text-gray-200 py-10">
               {skillsData.map((category, index) => (
                 <div key={index} className="w-full md:w-1/3 px-6 mb-8">
-                  <h3 className="text-xl text-[#4A2FBD] font-bold mb-4">{category.category}</h3>
+                  <h3 className="text-xl text-white font-bold mb-4">{category.category}</h3>
                   {category.skills.map((skill, idx) => (
                     <div key={idx} className="mb-4">
                       <div className="flex justify-between text-sm mb-1">
@@ -53,13 +64,25 @@ export const Skills = () => {
                         <span>{skill.level}%</span>
                       </div>
                       <div className="w-full bg-gray-700 rounded-lg h-3 overflow-hidden">
-                        <div
-                          className={`h-full bg-gradient-to-r from-[#8b75ec] to-[#4A2FBD] rounded-lg transition-all ease-out duration-[2500ms]`}
-                          style={{
-                            width: isVisible  ? `${skill.level}%` : '0%',
-                            transitionDelay: `${idx * 200}ms`, // Staggered effect
-                          }}
-                        ></div>
+                        {
+                          isMdScreen? (
+                          <div
+                            className={`h-full bg-gradient-to-r from-[#8b75ec] to-[#4A2FBD] rounded-lg transition-all ease-out duration-[2500ms]`}
+                            style={{
+                              width: isVisible  ? `${skill.level}%` : `0%`,
+                              transitionDelay: `${idx * 200}ms`, // Staggered effect
+                            }}
+                          ></div> ) :(
+                            <div
+                            className={`h-full bg-gradient-to-r from-[#8b75ec] to-[#4A2FBD] rounded-lg transition-all ease-out duration-[2500ms]`}
+                            style={{
+                              width: `${skill.level}%` ,
+                              transitionDelay: `${idx * 200}ms`, // Staggered effect
+                            }}
+                          ></div> 
+                          )
+
+                        }
                       </div>
                     </div>
                   ))}
