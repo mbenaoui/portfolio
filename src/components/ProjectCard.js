@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 export const ProjectCard = ({ title, description, imgUrl, onClick }) => {
   return (
     <Col size={12} sm={6} md={4} onClick={onClick} style={{ cursor: 'pointer' }}>
-      <div className="proj-imgbx">
+      <div className="proj-imgbx flex justify-center ">
         <img  className="w-96 h-80  " src={imgUrl} alt={title} />
         <div className="proj-txtx space-y-4">
           <h4>{title}</h4>
