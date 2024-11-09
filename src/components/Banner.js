@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import headerImg from "../assets/img/header-img.svg";
 import headerImg from "../assets/me.1.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
@@ -11,7 +10,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(200);
-  const [index, setIndex] = useState(1);
+  // const [index, setIndex] = useState(1);
   const toRotate = ["Web Developer", "Mobile Developer"];
   const period = 300;
 
@@ -36,15 +35,15 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
+      // setIndex(prevIndex => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
+      // setIndex(1);
       setDelta(200);
     } else {
-      setIndex(prevIndex => prevIndex + 1);
+      // setIndex(prevIndex => prevIndex + 1);
     }
   }
 

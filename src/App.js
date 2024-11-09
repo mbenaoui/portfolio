@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +15,6 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner /> 
-   
       <Skills />
       <Projects />
       <Contact />
