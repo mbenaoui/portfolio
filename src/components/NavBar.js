@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-// import { HiDownload } from "react-icons/hi";
+
 
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
@@ -49,12 +49,11 @@ export const NavBar = () => {
               <div className="w-auto h-14 rounded-full mt-3 px-4 bg-black border border-white flex justify-center items-center">
                 <a
                   className="bg-white px-2 py-1 text-black flex items-center gap-2 rounded-md outline-none focus:scale-110 hover:scale-110 font-serif active:scale-105 transition cursor-pointer borderBlack"
-                  href="/assets/MOHAMMED_BENAOUIJA.pdf"
+                  href="/MOHAMMED_BENAOUIJA.pdf"
                   download="MOHAMMED_BENAOUIJA_CV.pdf"
                 >
                   Download CV
 
-                  {/* <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />  */}
                 </a>
               </div>
             </Nav>
