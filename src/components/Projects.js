@@ -43,35 +43,33 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Frontaend Mobile Developer at BudyCoatch",
+      title: "Frontend Mobile Developer  at buddy-coach",
       description: {
-        intro: "At Moojbuzz, I played a key role as a full-stack mobile developer, crafting high-performance mobile applications with a focus on user-centric design and reliable backend infrastructure. Leveraging React Native, NestJS, Docker, Git, and Firebase, I contributed to creating intuitive mobile experiences that were both secure and scalable.",
+        intro: "Developed a Flutter-based mobile application that features an AI-driven coaching assistant. The app is designed to provide users with personalized guidance and support through conversational interactions, leveraging AI to simulate a coaching experience. I was responsible for the frontend development, ensuring a smooth and engaging user interface and interaction experience.",
         keyContributions: {
           title: "Key Contributions",
           items: [
-            "React Native: Led the mobile application development, delivering a seamless and intuitive experience across iOS and Android platforms. Focused on building fast, responsive, and user-friendly interfaces.",
-            "NestJS: Engineered a scalable and secure backend infrastructure using NestJS, which provided efficient data management, API integration, and robust user authentication.",
-            "Tailwind CSS: Designed stylish and cohesive interfaces with Tailwind CSS, ensuring a visually engaging and consistent user experience.",
-            "Prisma & PostgreSQL: Utilized Prisma as an ORM for efficient data handling, paired with PostgreSQL for secure and scalable data storage, enabling the application to grow smoothly with increasing user demands.",
-            "Firebase: Implemented Firebase for real-time data interactions and secure user authentication, ensuring smooth performance and safeguarding sensitive user data.",
-            "Docker: Employed Docker for containerization, ensuring consistent development and production environments across all stages of the project.",
-            "Git: Managed version control using Git, ensuring smooth collaboration across teams and maintaining project integrity through well-organized and trackable changes."
+            "Developed responsive and intuitive UI components in Flutter, optimizing layouts for various screen sizes and enhancing user engagemen .",
+            "Integrated custom themes, animations, and visual effects to create a professional, interactive interface for the AI coach.",
+            "Ensured seamless interaction between frontend components and backend APIs, facilitating real-time conversation flows with the AI.",
+            
           ]
         },
         collaborationAndResults: {
           title: "Collaboration and Results",
           items: [
-            "Worked alongside cross-functional teams to ensure smooth frontend and backend integration, resulting in real-time synchronization and an optimized user experience.",
-            " Leveraged Docker to streamline the development and deployment process, improving the reliability and efficiency of the development workflow.",
-            " Delivered scalable, secure, and high-performance solutions, meeting the growing demands of the mobile platform while maintaining a seamless user experience."
+            "Worked closely with a cross-functional team, including backend developers, UI/UX designers, and project managers, to align the frontend experience with the AI's functionality",
+            " Participated in regular stand-up meetings and brainstorming sessions to adapt and enhance features based on team feedback.",
+            "Delivered a polished, user-friendly interface that has been well-received by initial users, increasing engagement with the conversational AI and resulting in high user retention in early testing phases."
           ]
         },
         softSkills: {
           title: "Soft Skills Developed",
           items: [
-            "Leadership in mobile development: Directed mobile development efforts to ensure the solutions were both user-friendly and technically robust.",
-            "Effective time and resource management: Collaborated efficiently across teams, ensuring deadlines were met and projects stayed on track.",
-            "Adaptability and problem-solving: Tackled challenges with innovative solutions, adapting quickly to new technologies and project needs, ensuring successful project delivery."
+            "Teamwork: Enhanced my ability to work effectively within a team, coordinating tasks and sharing updates to ensure project cohesion.",
+            "Adaptability: Adapted to changing requirements quickly, especially as new features and improvements were suggested by the team.",
+            "Problem-Solving: Strengthened my troubleshooting and debugging skills, resolving challenges that emerged in UI development and integration with the AI engine.",
+            "Communication: Improved cross-functional communication skills, particularly in translating technical frontend requirements into clear objectives aligned with the project's AI goals."
           ]
         }
       },
